@@ -54,7 +54,7 @@
                     <label for="exampleInputPassword1" class="form-label">Contraseña</label>
                     <input type="password" class="form-control" id="exampleInputPassword1">
                   </div>
-                  <a href="./index.html" class="btn btn-primary w-100 py-8 fs-4 mb-4 rounded-2">Registrarse</a>
+                  <a href="../index.php" class="btn btn-primary w-100 py-8 fs-4 mb-4 rounded-2">Registrarse</a>
                   <div class="d-flex align-items-center justify-content-center">
                     <p class="fs-4 mb-0 fw-bold">Ya tienes cuenta?</p>
                     <a class="text-primary fw-bold ms-2" href="./authentication-login.php">Iniciar Sesion</a>
