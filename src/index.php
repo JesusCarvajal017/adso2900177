@@ -37,7 +37,7 @@
                 <span>
                   <i class="ti ti-layout-dashboard"></i>
                 </span>
-                <span class="hide-menu">Dashboard</span>
+                <span class="hide-menu">Bienvenido</span>
               </a>
             </li>
             <li class="nav-small-cap">
@@ -72,14 +72,27 @@
       <header class="app-header">
         <nav class="navbar navbar-expand-lg navbar-light">
           <ul class="navbar-nav">
-            <h5 class="m-0">SENA - ADSO</h5>
+            <li class="nav-item d-block d-xl-none">
+              <a class="nav-link sidebartoggler nav-icon-hover" id="headerCollapse" href="javascript:void(0)">
+                <i class="ti ti-menu-2"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-icon-hover" href="javascript:void(0)">
+                ADSO
+              </a>
+            </li>
           </ul>
           <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
             <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
               <li class="nav-item dropdown">
                 <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown" aria-expanded="false">
                   <!-- Icono Usuario -->
-                  <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                    <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                  </svg>
                 </a>
                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
                   <div class="message-body">
@@ -93,7 +106,12 @@
                       <div>
                         Salir
                       </div>
-                      <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-logout"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" /><path d="M9 12h12l-3 -3" /><path d="M18 15l3 -3" /></svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-logout">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
+                        <path d="M9 12h12l-3 -3" />
+                        <path d="M18 15l3 -3" />
+                      </svg>
                     </a>
                   </div>
                 </div>
@@ -247,7 +265,7 @@
                       <span class="timeline-badge border-2 border border-danger flex-shrink-0 my-8"></span>
                       <span class="timeline-badge-border d-block flex-shrink-0"></span>
                     </div>
-                    <div class="timeline-desc fs-3 text-dark mt-n1 fw-semibold">New arrival recorded 
+                    <div class="timeline-desc fs-3 text-dark mt-n1 fw-semibold">New arrival recorded
                     </div>
                   </li>
                   <li class="timeline-item d-flex position-relative overflow-hidden">
@@ -288,10 +306,12 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td class="border-bottom-0"><h6 class="fw-semibold mb-0">1</h6></td>
                         <td class="border-bottom-0">
-                            <h6 class="fw-semibold mb-1">Sunil Joshi</h6>
-                            <span class="fw-normal">Web Designer</span>                          
+                          <h6 class="fw-semibold mb-0">1</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-1">Sunil Joshi</h6>
+                          <span class="fw-normal">Web Designer</span>
                         </td>
                         <td class="border-bottom-0">
                           <p class="mb-0 fw-normal">Elite Admin</p>
@@ -304,12 +324,14 @@
                         <td class="border-bottom-0">
                           <h6 class="fw-semibold mb-0 fs-4">$3.9</h6>
                         </td>
-                      </tr> 
+                      </tr>
                       <tr>
-                        <td class="border-bottom-0"><h6 class="fw-semibold mb-0">2</h6></td>
                         <td class="border-bottom-0">
-                            <h6 class="fw-semibold mb-1">Andrew McDownland</h6>
-                            <span class="fw-normal">Project Manager</span>                          
+                          <h6 class="fw-semibold mb-0">2</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-1">Andrew McDownland</h6>
+                          <span class="fw-normal">Project Manager</span>
                         </td>
                         <td class="border-bottom-0">
                           <p class="mb-0 fw-normal">Real Homes WP Theme</p>
@@ -322,12 +344,14 @@
                         <td class="border-bottom-0">
                           <h6 class="fw-semibold mb-0 fs-4">$24.5k</h6>
                         </td>
-                      </tr> 
+                      </tr>
                       <tr>
-                        <td class="border-bottom-0"><h6 class="fw-semibold mb-0">3</h6></td>
                         <td class="border-bottom-0">
-                            <h6 class="fw-semibold mb-1">Christopher Jamil</h6>
-                            <span class="fw-normal">Project Manager</span>                          
+                          <h6 class="fw-semibold mb-0">3</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-1">Christopher Jamil</h6>
+                          <span class="fw-normal">Project Manager</span>
                         </td>
                         <td class="border-bottom-0">
                           <p class="mb-0 fw-normal">MedicalPro WP Theme</p>
@@ -340,12 +364,14 @@
                         <td class="border-bottom-0">
                           <h6 class="fw-semibold mb-0 fs-4">$12.8k</h6>
                         </td>
-                      </tr>      
+                      </tr>
                       <tr>
-                        <td class="border-bottom-0"><h6 class="fw-semibold mb-0">4</h6></td>
                         <td class="border-bottom-0">
-                            <h6 class="fw-semibold mb-1">Nirav Joshi</h6>
-                            <span class="fw-normal">Frontend Engineer</span>                          
+                          <h6 class="fw-semibold mb-0">4</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-1">Nirav Joshi</h6>
+                          <span class="fw-normal">Frontend Engineer</span>
                         </td>
                         <td class="border-bottom-0">
                           <p class="mb-0 fw-normal">Hosting Press HTML</p>
@@ -358,7 +384,7 @@
                         <td class="border-bottom-0">
                           <h6 class="fw-semibold mb-0 fs-4">$2.4k</h6>
                         </td>
-                      </tr>                       
+                      </tr>
                     </tbody>
                   </table>
                 </div>
