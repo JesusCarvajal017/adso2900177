@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Modernize Free</title>
-  <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.png" />
+  <link rel="shortcut icon" type="image/png" href="../../assets/images/logos/favicon.png" />
   <link rel="stylesheet" href="../../assets/css/styles.min.css" />
-  <link rel="stylesheet" href="../../assets/css/grupos.css">
+  <link rel="stylesheet" href="../../assets/css/general.css">
 </head>
 
 <body>
@@ -71,7 +71,7 @@
     <div class="body-wrapper">
       <!--  Header Start -->
       <header class="app-header">
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-head">
           <ul class="navbar-nav">
             <li class="nav-item d-block d-xl-none">
               <a class="nav-link sidebartoggler nav-icon-hover" id="headerCollapse" href="javascript:void(0)">
@@ -124,7 +124,7 @@
       <!--  Header End -->
 
       <!-- CONTENIDO GRUPO -->
-      <div class="container-fluid">
+      <div class="container-fluid ">
         <div class="container-fluid">
           <!-- Seccion Logo Grupo -->
           <div class="contenedor-juego">
