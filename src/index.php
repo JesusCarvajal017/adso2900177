@@ -4,9 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Modernize Free</title>
-  <link rel="shortcut icon" type="image/png" href="assets/images/logos/favicon.png" />
+  <title>Inicio</title>
+  <link rel="shortcut icon" type="image/png" href="assets/images/logos/logo-sena.png" />
+  <link rel="stylesheet" href="assets/libs/bootstrap/scss/css/bootstrap.css">
   <link rel="stylesheet" href="assets/css/styles.min.css" />
+  
 </head>
 
 <body>
@@ -18,9 +20,7 @@
       <!-- Sidebar scroll-->
       <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
-          <a href="#" class="text-nowrap logo-img">
-            <img src="assets/images/logos/dark-logo.svg" width="180" alt="" />
-          </a>
+            <img src="assets/images/logos/logo-sena.png" width="70" alt="" /> <h3>Proyectos</h3>
           <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
             <i class="ti ti-x fs-8"></i>
           </div>
@@ -65,8 +65,6 @@
       </div>
       <!-- End Sidebar scroll-->
     </aside>
-    <!--  Sidebar End -->
-    <!--  Main wrapper -->
     <div class="body-wrapper">
       <!--  Header Start -->
       <header class="app-header">
@@ -140,87 +138,61 @@
                     </select>
                   </div>
                 </div>
-                <div id="chart"></div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="row">
-              <div class="col-lg-12">
-                <!-- Yearly Breakup -->
-                <div class="card overflow-hidden">
-                  <div class="card-body p-4">
-                    <h5 class="card-title mb-9 fw-semibold">Yearly Breakup</h5>
-                    <div class="row align-items-center">
-                      <div class="col-8">
-                        <h4 class="fw-semibold mb-3">$36,358</h4>
-                        <div class="d-flex align-items-center mb-3">
-                          <span
-                            class="me-1 rounded-circle bg-light-success round-20 d-flex align-items-center justify-content-center">
-                            <i class="ti ti-arrow-up-left text-success"></i>
-                          </span>
-                          <p class="text-dark me-1 fs-3 mb-0">+9%</p>
-                          <p class="fs-3 mb-0">last year</p>
-                        </div>
-                        <div class="d-flex align-items-center">
-                          <div class="me-4">
-                            <span class="round-8 bg-primary rounded-circle me-2 d-inline-block"></span>
-                            <span class="fs-2">2023</span>
-                          </div>
-                          <div>
-                            <span class="round-8 bg-light-primary rounded-circle me-2 d-inline-block"></span>
-                            <span class="fs-2">2023</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-4">
-                        <div class="d-flex justify-content-center">
-                          <div id="breakup"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container h-100">
+            <div class="row h-100 align-items-center">
+              <div class="col-md-6">
+                <img src="assets/images/logos/aqua.png" class="d-block w-100" alt="Aqua Project">
               </div>
-              <div class="col-lg-12">
-                <!-- Monthly Earnings -->
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row alig n-items-start">
-                      <div class="col-8">
-                        <h5 class="card-title mb-9 fw-semibold"> Monthly Earnings </h5>
-                        <h4 class="fw-semibold mb-3">$6,820</h4>
-                        <div class="d-flex align-items-center pb-1">
-                          <span
-                            class="me-2 rounded-circle bg-light-danger round-20 d-flex align-items-center justify-content-center">
-                            <i class="ti ti-arrow-down-right text-danger"></i>
-                          </span>
-                          <p class="text-dark me-1 fs-3 mb-0">+9%</p>
-                          <p class="fs-3 mb-0">last year</p>
-                        </div>
-                      </div>
-                      <div class="col-4">
-                        <div class="d-flex justify-content-end">
-                          <div
-                            class="text-white bg-secondary rounded-circle p-6 d-flex align-items-center justify-content-center">
-                            <i class="ti ti-currency-dollar fs-6"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="earning"></div>
+              <div class="col-md-6">
+                <div class="carousel-caption text-end text-dark d-flex flex-column justify-content-center h-100">
+                  <h5 style="font-size: 7vh; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Aquac-Memory</h5>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-4 d-flex align-items-stretch">
-            <div class="card w-100">
-              <div class="card-body p-4">
-                <div class="mb-4">
-                  <h5 class="card-title fw-semibold">Recent Transactions</h5>
+        <div class="carousel-item">
+          <div class="container h-100">
+            <div class="row h-100 align-items-center">
+              <div class="col-md-6">
+                <img src="assets/images/logos/arcade.png" class="d-block w-100" alt="Arcade Project">
+              </div>
+              <div class="col-md-6">
+                <div class="carousel-caption text-end text-dark d-flex flex-column justify-content-center h-100">
+                  <h5 style="font-size: 6vh; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">ARCADE MEMORIZE</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container h-100">
+            <div class="row h-100 align-items-center">
+              <div class="col-md-6">
+                <img src="assets/images/logos/dash.png" class="d-block w-100" alt="Dashboard Project"  style="width: auto;height: 70vh;">
+              </div>
+              <div class="col-md-6">
+                <div class="carousel-caption text-end text-dark d-flex flex-column justify-content-center h-100">
+                  <h5 style="font-size: 7vh; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">NEURODASH</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container h-50">
+            <div class="row h-100 align-items-center">
+              <div class="col-md-6">
+                <img src="assets/images/logos/dash.png" class="d-block w-100" alt="Dashboard Project">
+              </div>
+              <div class="col-md-6">
+                <div class="carousel-caption text-end text-dark d-flex flex-column justify-content-center h-100">
+                  <h5 style="font-size: 7vh; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">FOOD MEMORIZE</h5>
                 </div>
                 <ul class="timeline-widget mb-0 position-relative mb-n5">
                   <li class="timeline-item d-flex position-relative overflow-hidden">
@@ -393,15 +365,42 @@
           </div>
         </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"></span>
+      </button>
+    </div>
+    <!-- Row 1 -->
+    <div class="row">
+      <!-- imagen -->
+      <div class="col-md-6 d-flex justify-content-center">
+        <img src="assets/images/logos/logo-sena.png" alt="Logo SENA" class="img-fluid" style="max-height: 300px;">
+      </div>
+
+      <!-- Texto -->
+      <div class="col-md-6 d-flex align-items-center">
+        <p class="text-center fs-5">
+          Bienvenido al portafolio de proyectos ADSO-2900177. Aquí podrás explorar  y encontrar toda la informacion  relacionada con los proyectos
+        </p>
+      </div>
     </div>
   </div>
-  <script src="assets/libs/jquery/dist/jquery.min.js"></script>
-  <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/sidebarmenu.js"></script>
-  <script src="assets/js/app.min.js"></script>
-  <script src="assets/libs/apexcharts/dist/apexcharts.min.js"></script>
-  <script src="assets/libs/simplebar/dist/simplebar.js"></script>
-  <script src="assets/js/dashboard.js"></script>
+</div>
+
+<!-- Scripts -->
+<!-- <script src="assets/libs/jquery/dist/jquery.min.js"></script> -->
+<script src="assets/libs/bootstrap/dist/js/bootstrap.js"></script>
+<!-- <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
+<!-- <script src="assets/js/sidebarmenu.js"></script> -->
+<!-- <script src="assets/js/app.min.js"></script> -->
+<!-- <script src="assets/libs/apexcharts/dist/apexcharts.min.js"></script>
+<script src="assets/libs/simplebar/dist/simplebar.js"></script> -->
+<!-- <script src="assets/js/dashboard.js"></script> -->
+
 </body>
 
 </html>
