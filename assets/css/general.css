@@ -1,3 +1,254 @@
+/* General */
+.fondo {
+    background: #DCE35B !important;
+    background: -webkit-linear-gradient(to right, #45B649, #DCE35B) !important;
+    background: linear-gradient(to right, #45B649, #DCE35B) !important;
+}
+
+.fondo-dos {
+    background: transparent;
+}
+
+/* Estilos Dashboard */
+.title-dashboard {
+    text-align: center;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.contenedor-mosaico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenedor-mosaico img {
+    border: 6px outset rgb(3, 152, 189);
+    border-radius: 20px;
+    width: 400px;
+    height: 400px;
+}
+
+.contenedor-descripcion {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.carta-descripcion {
+    width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+    background: rgba(93, 136, 255, 0.5);
+    box-shadow: 8px 8px 20px #bebebe,
+        -8px -8px 20px rgba(93, 136, 255, 0.5);
+    padding: 0.5rem;
+}
+
+.carta-descripcion h2 {
+    font-weight: 700;
+}
+
+.contendor-parrafo {
+    padding: 1rem;
+}
+
+.contendor-parrafo p {
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+/* Carrusel */
+
+.contendor-proyectos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.carruel-proyectos {
+    position: relative;
+    height: 450px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.swiper {
+    width: 950px;
+}
+
+.card-proyecto {
+    background: rgba(93, 136, 255, 0.4);
+    border-radius: 20px;
+    height: 360px;
+    margin: 20px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border: 2px outset rgb(180, 180, 180);
+}
+
+.card-proyecto .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 30px;
+    position: relative;
+    z-index: 100;
+}
+
+.carruel-proyectos .card-proyecto .contenedor-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+    width: 140px;
+    padding: 8px;
+    margin-top: 30px;
+}
+
+.carruel-proyectos .card-proyecto .contenedor-img img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 3px outset rgba(0, 117, 49, 0.8);
+}
+
+.card-proyecto .contenedor-detalles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    color: black;
+}
+
+.contenedor-detalles .nombre-proyecto {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1;
+    font-style: italic;
+}
+
+.contenedor-detalles .descripcion-proyecto {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+.card-proyecto .contenedor-btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.btn-visitar {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background-color: rgb(0 107 179);
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #ffff;
+    gap: 10px;
+    font-weight: bold;
+    border: 3px solid #ffffff4d;
+    outline: none;
+    overflow: hidden;
+    font-size: 15px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-visitar:hover {
+    transform: scale(1.05);
+    border-color: #fff9;
+}
+
+.btn-visitar:hover .icon {
+    transform: translate(4px);
+}
+
+.btn-visitar:hover::before {
+    animation: shine 1.5s ease-out infinite;
+}
+
+.btn-visitar::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(120deg,
+            rgba(255, 255, 255, 0) 30%,
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0) 70%);
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+}
+
+@keyframes shine {
+    0% {
+        left: -100px;
+    }
+
+    60% {
+        left: 100%;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+.swiper-pagination {
+    position: absolute;
+    top: 450px;
+}
+
+.swiper-pagination-bullet {
+    height: 7px;
+    width: 26px;
+    border-radius: 25px;
+    background: rgb(0, 117, 49);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    opacity: 0.7;
+    color: rgb(0, 117, 49);
+    transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    opacity: 1;
+    color: rgb(0, 117, 49);
+}
+
+
+
+/* Estilos Secciones Grupos */
 .contenedor-juego {
     display: flex;
     flex-direction: column;
@@ -48,7 +299,6 @@
     border: 6px outset black;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
-
 }
 
 .contenedor-foto-integrantes img {

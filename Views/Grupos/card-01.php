@@ -19,9 +19,10 @@
       <!-- Sidebar scroll-->
       <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
-          <a href="../../index.php" class="text-nowrap logo-img">
-            <img src="../../assets/images/logos/dark-logo.svg" width="180" alt="" />
+          <a href="index.php" class="text-nowrap logo-img">
+            <img src="../../assets/images/logo-sena.png" width="70" alt="" />
           </a>
+          <h3>Proyectos</h3>
           <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
             <i class="ti ti-x fs-8"></i>
           </div>
@@ -79,7 +80,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-icon-hover" href="javascript:void(0)">
+              <a class="nav-link ">
                 ADSO
               </a>
             </li>

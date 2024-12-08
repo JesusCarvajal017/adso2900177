@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Inicio de sesion</title>
-  <link rel="shortcut icon" type="image/png" href="../assets/images/logos/logo-sena.png" />
+  <link rel="shortcut icon" type="image/png" href="../assets/images/logo-sena.png" />
   <link rel="stylesheet" href="../assets/css/styles.min.css" />
 </head>
 
@@ -21,7 +21,7 @@
             <div class="card mb-0">
               <div class="card-body">
                 <div class="text-nowrap logo-img text-center d-block py-3 w-100">
-                  <img src="../assets/images/logos/logo-sena.png" width="90" alt="">
+                  <img src="../assets/images/logo-sena.png" width="90" alt="">
                 </div>
                 <p class="text-center">ADSO-2900177</p>
                 <form>
