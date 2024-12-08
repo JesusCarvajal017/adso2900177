@@ -262,13 +262,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.5rem;
 }
 
 .contenedor-img-logo img {
-    width: 8rem;
-    height: 8rem;
-    background-color: rgb(160, 160, 160);
+    width: 10rem;
+    height: 10rem;
+}
+
+.bounce {
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .contenedor-integrantes {
@@ -277,6 +295,7 @@
     align-items: center;
     flex-direction: column;
     padding: .5rem;
+    height: 100%;
 }
 
 .nombre-integrantes {

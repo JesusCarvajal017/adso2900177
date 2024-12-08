@@ -221,10 +221,10 @@
         <div class="container-fluid">
           <!-- Seccion Logo Grupo -->
           <div class="contenedor-juego">
-            <div class="contenedor-img-logo">
-              <img class="img-fluid bounce" src="../../assets/images/Logos Juegos/AQUA.png" alt="icono-juego">
+            <div class="contenedor-img-logo mb-1">
+              <img class="img-fluid bounce" src="../../assets/images/Logos Juegos/ARCADE.png" alt="icono-juego">
             </div>
-            <h3>AQUA MEMORIZE</h1>
+            <h3>ARCADE MEMORY</h1>
           </div>
 
           <!-- Seccion Integrantes -->
@@ -252,7 +252,7 @@
                 <div class="col-md-7">
                   <!-- Foto Intengrantes -->
                   <div class="contenedor-foto-integrantes">
-                    <img src="" alt="foto-integrantes">
+                    <img src="../../assets/images/ADSO/Grupo_Bata.jpg" alt="foto-integrantes">
                   </div>
                 </div>
               </div>
