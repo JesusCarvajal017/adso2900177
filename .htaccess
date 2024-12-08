@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule ^$ /adso2900177/views/authentication-login.php [R=302,L]
+

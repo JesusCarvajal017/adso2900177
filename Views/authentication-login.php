@@ -1,6 +1,14 @@
+<?php
+  session_start();
+  // session_destroy();
+
+  if(isset($_SESSION['user_id'])){
+    header('Location: ../index.php');
+  }
+    
+?>
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,17 +32,18 @@
                   <img src="../assets/images/logos/logo-sena.png" width="90" alt="">
                 </div>
                 <p class="text-center">ADSO-2900177</p>
-                <form>
+                <form action="../model/login/acceso.php" method="post">
                   <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Correo</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input type="email" class="form-control" name="txtEmial" id="exampleInputEmail1" aria-describedby="emailHelp">
                   </div>
                   <div class="mb-4">
                     <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <input type="password" class="form-control" name="txtPassword" id="exampleInputPassword1">
                   </div>
                   
-                  <a href="../index.php" class="btn btn-primary w-100 py-8 fs-4 mb-4 rounded-2">Iniciar Sesion</a>
+                  <!-- <a href="../index.php" class="btn btn-primary w-100 py-8 fs-4 mb-4 rounded-2">Iniciar Sesion</a> -->
+                  <button type="submit" class="btn btn-primary w-100 py-8 fs-4 mb-4 rounded-2">Iniciar Sesion</button>
                   <div class="d-flex align-items-center justify-content-center">
                     <p class="fs-4 mb-0 fw-bold">No tienes cuenta</p>
                     <a class="text-primary fw-bold ms-2" href="./authentication-register.php">Crea una cuenta</a>

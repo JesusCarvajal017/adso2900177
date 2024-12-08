@@ -1,3 +1,17 @@
+<?php
+  require('model/db/cnxion.php');
+
+  $cxion = new Conexion();
+
+  session_start();
+  // session_destroy();
+
+  if(!isset($_SESSION['user_id'])){
+    header('Location: Views/authentication-login.php');
+  }
+    
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -8,7 +22,6 @@
   <link rel="shortcut icon" type="image/png" href="assets/images/logos/logo-sena.png" />
   <link rel="stylesheet" href="assets/libs/bootstrap/scss/css/bootstrap.css">
   <link rel="stylesheet" href="assets/css/styles.min.css" />
-  
 </head>
 
 <body>
@@ -16,55 +29,8 @@
   <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
     data-sidebar-position="fixed" data-header-position="fixed">
     <!-- Sidebar Start -->
-    <aside class="left-sidebar">
-      <!-- Sidebar scroll-->
-      <div>
-        <div class="brand-logo d-flex align-items-center justify-content-between">
-            <img src="assets/images/logos/logo-sena.png" width="70" alt="" /> <h3>Proyectos</h3>
-          <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
-            <i class="ti ti-x fs-8"></i>
-          </div>
-        </div>
-        <!-- Sidebar navigation-->
-        <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
-          <ul id="sidebarnav">
-            <li class="nav-small-cap">
-              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-              <span class="hide-menu">Home</span>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="index.php" aria-expanded="false">
-                <span>
-                  <i class="ti ti-layout-dashboard"></i>
-                </span>
-                <span class="hide-menu">Bienvenidos</span>
-              </a>
-            </li>
-            <li class="nav-small-cap">
-              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-              <span class="hide-menu">GRUPOS</span>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="Views/Grupos/card-01.php" aria-expanded="false">
-                <span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-users-group">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
-                    <path d="M8 21v-1a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v1" />
-                    <path d="M15 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
-                    <path d="M17 10h2a2 2 0 0 1 2 2v1" />
-                    <path d="M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
-                    <path d="M3 13v-1a2 2 0 0 1 2 -2h2" />
-                  </svg>
-                </span>
-                <span class="hide-menu">Grupo</span>
-              </a>
-          </ul>
-        </nav>
-        <!-- End Sidebar navigation -->
-      </div>
-      <!-- End Sidebar scroll-->
-    </aside>
+    <?php include('Views/componentes/aside.php'); ?>
+
     <div class="body-wrapper">
   <!-- Header Start -->
   <header class="app-header">
@@ -86,7 +52,7 @@
             <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
               <div class="message-body">
                 <!-- Botón Cerrar Sesión -->
-                <a href="Views/authentication-login.php" class="btn btn-outline-primary mx-5 mt-2 d-flex justify-content-center align-items-center gap-2">
+                <a href="model/login/cerrarSession.php" class="btn btn-outline-primary mx-5 mt-2 d-flex justify-content-center align-items-center gap-2">
                   <div>Salir</div>
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-logout">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
