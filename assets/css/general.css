@@ -1,3 +1,254 @@
+/* General */
+.fondo {
+    background: #DCE35B !important;
+    background: -webkit-linear-gradient(to right, #45B649, #DCE35B) !important;
+    background: linear-gradient(to right, #45B649, #DCE35B) !important;
+}
+
+.fondo-dos {
+    background: transparent;
+}
+
+/* Estilos Dashboard */
+.title-dashboard {
+    text-align: center;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.contenedor-mosaico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenedor-mosaico img {
+    border: 6px outset rgb(3, 152, 189);
+    border-radius: 20px;
+    width: 400px;
+    height: 400px;
+}
+
+.contenedor-descripcion {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.carta-descripcion {
+    width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+    background: rgba(93, 136, 255, 0.5);
+    box-shadow: 8px 8px 20px #bebebe,
+        -8px -8px 20px rgba(93, 136, 255, 0.5);
+    padding: 0.5rem;
+}
+
+.carta-descripcion h2 {
+    font-weight: 700;
+}
+
+.contendor-parrafo {
+    padding: 1rem;
+}
+
+.contendor-parrafo p {
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+/* Carrusel */
+
+.contendor-proyectos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.carruel-proyectos {
+    position: relative;
+    height: 450px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.swiper {
+    width: 950px;
+}
+
+.card-proyecto {
+    background: rgba(93, 136, 255, 0.4);
+    border-radius: 20px;
+    height: 360px;
+    margin: 20px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border: 2px outset rgb(180, 180, 180);
+}
+
+.card-proyecto .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 30px;
+    position: relative;
+    z-index: 100;
+}
+
+.carruel-proyectos .card-proyecto .contenedor-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+    width: 140px;
+    padding: 8px;
+    margin-top: 30px;
+}
+
+.carruel-proyectos .card-proyecto .contenedor-img img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 3px outset rgba(0, 117, 49, 0.8);
+}
+
+.card-proyecto .contenedor-detalles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    color: black;
+}
+
+.contenedor-detalles .nombre-proyecto {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1;
+    font-style: italic;
+}
+
+.contenedor-detalles .descripcion-proyecto {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+.card-proyecto .contenedor-btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.btn-visitar {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background-color: rgb(0 107 179);
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #ffff;
+    gap: 10px;
+    font-weight: bold;
+    border: 3px solid #ffffff4d;
+    outline: none;
+    overflow: hidden;
+    font-size: 15px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-visitar:hover {
+    transform: scale(1.05);
+    border-color: #fff9;
+}
+
+.btn-visitar:hover .icon {
+    transform: translate(4px);
+}
+
+.btn-visitar:hover::before {
+    animation: shine 1.5s ease-out infinite;
+}
+
+.btn-visitar::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(120deg,
+            rgba(255, 255, 255, 0) 30%,
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0) 70%);
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+}
+
+@keyframes shine {
+    0% {
+        left: -100px;
+    }
+
+    60% {
+        left: 100%;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+.swiper-pagination {
+    position: absolute;
+    top: 450px;
+}
+
+.swiper-pagination-bullet {
+    height: 7px;
+    width: 26px;
+    border-radius: 25px;
+    background: rgb(0, 117, 49);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    opacity: 0.7;
+    color: rgb(0, 117, 49);
+    transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    opacity: 1;
+    color: rgb(0, 117, 49);
+}
+
+
+
+/* Estilos Secciones Grupos */
 .contenedor-juego {
     display: flex;
     flex-direction: column;
@@ -11,13 +262,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.5rem;
 }
 
 .contenedor-img-logo img {
-    width: 8rem;
-    height: 8rem;
-    background-color: rgb(160, 160, 160);
+    width: 10rem;
+    height: 10rem;
+}
+
+.bounce {
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .contenedor-integrantes {
@@ -26,6 +295,7 @@
     align-items: center;
     flex-direction: column;
     padding: .5rem;
+    height: 100%;
 }
 
 .nombre-integrantes {
@@ -48,7 +318,6 @@
     border: 6px outset black;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
-
 }
 
 .contenedor-foto-integrantes img {
@@ -122,4 +391,175 @@
     transform: translate(0);
 }
 
+/* MATRIZ DE RIESGOS */
+.risk-container {
+    width: 100%;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    border: 2px solid rgb(0, 117, 49);
+}
 
+.table-responsive {
+    overflow: auto;
+    height: 70vh;
+}
+
+.risk-table thead th {
+    position: sticky;
+    /* Hace que el encabezado sea fijo */
+    top: 0;
+    /* Fija el encabezado en la parte superior */
+    z-index: 1;
+    /* Asegura que el encabezado esté encima del contenido */
+    background-color: #f8f9fa;
+    /* Color de fondo para que sea legible */
+}
+
+.risk-table thead {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: rgb(88, 88, 88);
+}
+
+.risk-table th {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    vertical-align: middle;
+}
+
+.risk-table td {
+    vertical-align: middle;
+    transition: all 0.3s ease;
+}
+
+.risk-badge {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+
+.badge-high {
+    background-color: #d32f2f;
+    color: white;
+}
+
+.badge-medium {
+    background-color: #f57c00;
+    color: white;
+}
+
+.badge-low {
+    background-color: #388e3c;
+    color: white;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    transform: scale(1.01);
+}
+
+.container-btn-download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.btn-download {
+    --main-focus: #2d8cf0;
+    --font-color: #323232;
+    --bg-color-sub: rgba(0, 117, 49, 0.7);
+    --bg-color: rgb(0, 117, 49,0.5);
+    --main-color: #323232;
+    position: relative;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.btn-download,
+.button__icon,
+.button__text {
+    transition: all 0.3s;
+}
+
+.btn-download .button__text {
+    transform: translateX(22px);
+    color: var(--font-color);
+    font-weight: 600;
+}
+
+.btn-download .button__icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: var(--bg-color-sub);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-download .svg {
+    width: 20px;
+    fill: var(--main-color);
+}
+
+.btn-download:hover {
+    background: var(--bg-color);
+}
+
+.btn-download:hover .button__text {
+    color: transparent;
+}
+
+.btn-download:hover .button__icon {
+    width: 148px;
+    transform: translateX(0);
+}
+
+.btn-download:active {
+    transform: translate(3px, 3px);
+    box-shadow: 0px 0px var(--main-color);
+}
+
+/* BREAKPOINTS */
+
+@media (max-width: 768px) {
+    .contenedor-mosaico img {
+        border: 6px outset rgb(3, 152, 189);
+        border-radius: 20px;
+        width: 250px;
+        height: 250px;
+    }
+
+    .carta-descripcion {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        height: 100%;
+        padding: 0.5rem;
+    }
+
+    .contendor-parrafo {
+        padding: 0.5rem;
+    }
+
+    .contendor-parrafo p {
+        font-size: 0.6rem;
+    }
+
+}

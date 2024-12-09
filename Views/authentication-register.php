@@ -41,12 +41,12 @@
             <div class="card mb-0">
               <div class="card-body">
                 <div class="text-nowrap logo-img text-center d-block py-3 w-100">
-                  <img src="../assets/images/logos/logo-sena.png" width="90" alt="">
+                  <img src="../assets/images/logo-sena.png" width="90" alt="">
                 </div>
                 <p class="text-center">ADSO-2900177</p>
                 <form action="../model/registro/registro.php" method="post">
                   <div class="mb-3">
-                    <label for="exampleInputtext1" class="form-label">Nombre</label>
+                    <label for="exampleInputtext1" class="form-label">Nombres y Apellidos</label>
                     <input type="text" class="form-control" id="nameUser" name="txtNameUser" aria-describedby="textHelp">
                   </div>
                   <div class="mb-3">

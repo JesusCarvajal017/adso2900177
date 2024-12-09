@@ -1,0 +1,72 @@
+ /* Estilos generales para el contenedor del menú */
+ .sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #f4e4c1; /* Fondo en tonos cálidos */
+    color: #5a4033; /* Color de texto oscuro */
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    box-shadow: 3px 0 8px rgba(0, 0, 0, 0.2);
+    border-right: 2px solid #d1a86e; /* Borde decorativo */
+    font-family: 'Arial', sans-serif;
+    transition: all 0.3s;
+    overflow: scroll;
+}
+
+/* Estilos para el título del menú */
+.sidebar h4 {
+    font-size: 1.4em;
+    color: #5a4033;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Estilos para los elementos del menú */
+.sidebar a {
+    color: #5a4033;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Efecto hover para los elementos del menú */
+.sidebar a:hover {
+    background-color: #d1a86e;
+    color: #fff;
+    border-left-color: #d1a86e;
+    border-radius: 0 30px 30px 0;
+    max-width: 200px;
+}
+
+/* Elemento activo en el menú */
+.sidebar a.active {
+    background-color: #e69c36;
+    color: #fff;
+    border-left-color: #5a4033;
+    font-weight: bold;
+    border-radius: 0 30px 30px 0;
+    max-width: 200px;
+}
+
+/* Animación de transición */
+.sidebar a.active::before {
+    content: '▶';
+    margin-right: 8px;
+    color: #f4e4c1;
+}
+
+/* Estilos para el contenido principal */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}

@@ -1,11 +1,18 @@
+<?php 
+  include('validation.php');
+  include('../../Controller/query/users.php');
+
+  $data_sys = new User($cxion);
+?>
+
 <!doctype html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Modernize Free</title>
-  <link rel="shortcut icon" type="image/png" href="../../assets/images/logos/favicon.png" />
+  <title>ADSO</title>
+  <link rel="shortcut icon" type="image/png" href="../../assets/images/logo-sena.png" />
   <link rel="stylesheet" href="../../assets/css/styles.min.css" />
   <link rel="stylesheet" href="../../assets/css/general.css">
 </head>
@@ -14,58 +21,11 @@
   <!--  Body Wrapper -->
   <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
     data-sidebar-position="fixed" data-header-position="fixed">
+
     <!-- Sidebar Start -->
-    <aside class="left-sidebar">
-      <!-- Sidebar scroll-->
-      <div>
-        <div class="brand-logo d-flex align-items-center justify-content-between">
-          <a href="../../index.php" class="text-nowrap logo-img">
-            <img src="../../assets/images/logos/dark-logo.svg" width="180" alt="" />
-          </a>
-          <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
-            <i class="ti ti-x fs-8"></i>
-          </div>
-        </div>
-        <!-- Sidebar navigation-->
-        <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
-          <ul id="sidebarnav">
-            <li class="nav-small-cap">
-              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-              <span class="hide-menu">Home</span>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="../../index.php" aria-expanded="false">
-                <span>
-                  <i class="ti ti-layout-dashboard"></i>
-                </span>
-                <span class="hide-menu">Bienvenido</span>
-              </a>
-            </li>
-            <li class="nav-small-cap">
-              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-              <span class="hide-menu">GRUPOS</span>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="card-01.php" aria-expanded="false">
-                <span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-users-group">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
-                    <path d="M8 21v-1a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v1" />
-                    <path d="M15 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
-                    <path d="M17 10h2a2 2 0 0 1 2 2v1" />
-                    <path d="M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
-                    <path d="M3 13v-1a2 2 0 0 1 2 -2h2" />
-                  </svg>
-                </span>
-                <span class="hide-menu">Grupo</span>
-              </a>
-          </ul>
-        </nav>
-        <!-- End Sidebar navigation -->
-      </div>
-      <!-- End Sidebar scroll-->
-    </aside>
+    <?php include('componentes/aside.php') ?>
+    <!-- Sidebar End -->
+   
     <!--  Sidebar End -->
     <!--  Main wrapper -->
     <div class="body-wrapper">
@@ -79,7 +39,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-icon-hover" href="javascript:void(0)">
+              <a class="nav-link ">
                 ADSO
               </a>
             </li>
@@ -103,7 +63,7 @@
                     </a> -->
 
                     <!-- BTN CERRAR SESION -->
-                    <a href="../authentication-login.php" class="btn btn-outline-primary mx-5 mt-2 d-flex justify-content-center align-items-center gap-2">
+                    <a href="../../Model/login/cerrarSession.php" class="btn btn-outline-primary mx-5 mt-2 d-flex justify-content-center align-items-center gap-2">
                       <div>
                         Salir
                       </div>
@@ -129,9 +89,9 @@
           <!-- Seccion Logo Grupo -->
           <div class="contenedor-juego">
             <div class="contenedor-img-logo">
-              <img class="img-fluid" src="" alt="icono-juego">
+              <img class="img-fluid bounce" src="../../assets/images/Logos Juegos/AQUA.png" alt="icono-juego">
             </div>
-            <h3>Nombre Juego</h1>
+            <h3>AQUA MEMORIZE</h1>
           </div>
 
           <!-- Seccion Integrantes -->
@@ -149,11 +109,19 @@
                     </svg>
 
                     <div class="nombre-integrantes mt-3">
-                      <h5>Intengrante 01 (Rol)</h5>
-                      <h5>Intengrante 02 (Rol)</h5>
-                      <h5>Intengrante 03 (Rol)</h5>
-                      <h5>Intengrante 04 (Rol)</h5>
-                      <h5>Intengrante 05 (Rol)</h5>
+                    <?php
+                        $integrantes = $data_sys->integrantesPry('AQUA MEMERY');
+                        if(!empty($integrantes)){
+                            foreach($integrantes as $fila){
+                                $nombre_integrante = $fila['nombre_persona'];
+
+                                echo "<h5>".$nombre_integrante."</h5>";
+                            }
+                        }else{
+                          echo "<h5>No hay integrantes registrados</h5>";
+                          
+                        }
+                      ?>
                     </div>
                   </div>
                 </div>
@@ -169,7 +137,7 @@
 
           <!-- Seccion Boton -->
           <div class="contenedor-btn">
-            <button href="#" class="btn-explorar" style="--clr: #5d87ff">
+            <a href="../../page/aquamemorize" class="btn-explorar" style="--clr: #5d87ff" target="_blank">
               <span class="button__icon-wrapper">
                 <svg
                   viewBox="0 0 14 15"
@@ -194,7 +162,7 @@
                 </svg>
               </span>
               Explorar Equipo
-            </button>
+            </a>
 
           </div>
         </div>

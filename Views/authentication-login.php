@@ -29,7 +29,7 @@
             <div class="card mb-0">
               <div class="card-body">
                 <div class="text-nowrap logo-img text-center d-block py-3 w-100">
-                  <img src="../assets/images/logos/logo-sena.png" width="90" alt="">
+                  <img src="../assets/images/logo-sena.png" width="90" alt="">
                 </div>
                 <p class="text-center">ADSO-2900177</p>
                 <form action="../model/login/acceso.php" method="post">

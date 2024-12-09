@@ -1,0 +1,122 @@
+<!-- Guardar como index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Memorize</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+
+    <div id="chat-container">
+        <div id="chat-header">
+            <h2>Chat Local</h2>
+        </div>
+        <div id="chat-messages"></div>
+        <div id="escribiendo"></div>
+        <div id="chat-input">
+            <input type="text" id="mensaje" placeholder="Escribe un mensaje...">
+            <button id="enviar">Enviar</button>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        // Conectar al servidor Socket.io
+        const socket = io();
+        
+        // Elementos del DOM
+        const loginModal = document.getElementById('login-modal');
+        const nombreInput = document.getElementById('nombre-input');
+        const entrarBtn = document.getElementById('entrar-btn');
+        const mensajeInput = document.getElementById('mensaje');
+        const enviarBtn = document.getElementById('enviar');
+        const chatMessages = document.getElementById('chat-messages');
+        const escribiendoDiv = document.getElementById('escribiendo');
+
+        let timeoutEscribiendo;
+
+        // Función para agregar mensajes al chat
+        function agregarMensaje(mensaje, tipo, nombre = '') {
+            const div = document.createElement('div');
+            
+            if (tipo === 'sistema') {
+                div.className = 'sistema';
+                div.textContent = mensaje;
+            } else {
+                div.className = `mensaje ${tipo}`;
+                div.textContent = tipo === 'recibido' ? `${nombre}: ${mensaje}` : mensaje;
+            }
+            
+            chatMessages.appendChild(div);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        // Manejar el ingreso al chat
+        entrarBtn.addEventListener('click', () => {
+            const nombre = nombreInput.value.trim();
+            if (nombre) {
+                loginModal.style.display = 'none';
+                socket.emit('nuevo-usuario', nombre);
+            }
+        });
+
+        // Detectar cuando el usuario está escribiendo
+        mensajeInput.addEventListener('input', () => {
+            socket.emit('escribiendo', true);
+            clearTimeout(timeoutEscribiendo);
+            timeoutEscribiendo = setTimeout(() => {
+                socket.emit('escribiendo', false);
+            }, 1000);
+        });
+
+        // Enviar mensaje
+        function enviarMensaje() {
+            const mensaje = mensajeInput.value.trim();
+            if (mensaje) {
+                socket.emit('chat', mensaje);
+                agregarMensaje(mensaje, 'enviado');
+                mensajeInput.value = '';
+                // Limpiar estado de escritura
+                socket.emit('escribiendo', false);
+                clearTimeout(timeoutEscribiendo);
+            }
+        }
+
+        enviarBtn.addEventListener('click', enviarMensaje);
+        mensajeInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                enviarMensaje();
+            }
+        });
+
+        // Escuchar eventos del socket
+        socket.on('usuario-conectado', (nombre) => {
+            agregarMensaje(`${nombre} se unió al chat`, 'sistema');
+        });
+
+        socket.on('usuario-desconectado', (nombre) => {
+            agregarMensaje(`${nombre} abandonó el chat`, 'sistema');
+        });
+
+        socket.on('chat', (data) => {
+            if (data.nombre !== nombreInput.value.trim()) {
+                agregarMensaje(data.mensaje, 'recibido', data.nombre);
+            }
+        });
+
+        socket.on('escribiendo', (data) => {
+            if (data.escribiendo) {
+                escribiendoDiv.textContent = `${data.nombre} está escribiendo...`;
+            } else {
+                escribiendoDiv.textContent = '';
+            }
+        });
+
+        // Enfocar el input de nombre al cargar
+        nombreInput.focus();
+    </script>
+</body>
+</html>
