@@ -136,7 +136,7 @@
 
           <!-- Seccion Boton -->
           <div class="contenedor-btn">
-            <a href="../../" class="btn-explorar" style="--clr: #5d87ff" target="_blank">
+            <a href="../../page/arcadememory" class="btn-explorar" style="--clr: #5d87ff" target="_blank">
               <span class="button__icon-wrapper">
                 <svg
                   viewBox="0 0 14 15"

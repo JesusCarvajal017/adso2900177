@@ -1,0 +1,35 @@
+/* Estilo global */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Integrantes */
+.tamaño {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.page-section {
+    padding: 60px 0;
+}
+
+.page-section.bg-light {
+    background-color: #f8f9fa;
+}
+
+/* Redes sociales */
+.btn-social {
+    display: inline-block;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #333;
+    color: white;
+}

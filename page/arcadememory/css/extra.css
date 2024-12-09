@@ -1,0 +1,180 @@
+.tamaño{
+    width: 140px;
+    height: 140px;
+    border-radius:50%;
+}
+.logo{
+    width: 350px;
+    height: 350px;
+    border-radius:20%;
+    background-color: transparent!;
+    
+}
+.letra{
+    font-size: 350%;
+}
+/* Centrar todo en columna */
+.masthead .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para el botón */
+.btn-custom {
+    margin-top: 20px; /* Separación del logo */
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #ff00b7; /* Azul */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover y efecto activo */
+.btn-custom:hover {
+    background-color: #ff00b7; /* Azul más oscuro */
+    transform: translateY(-2px);
+}
+
+.btn-custom:active {
+    transform: translateY(0px);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Asegurarse de que el logo no desplace elementos */
+img.logo {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Mantener alineado en bloque */
+}
+/* Fondo llamativo para la sección del índice */
+#indice {
+    padding: 50px 20px;
+    background: linear-gradient(135deg, gray, gray,gray);
+    color: white;
+    text-align: center;
+}
+
+/* Título de la sección con más estilo */
+#indice .section-heading {
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo de la tabla */
+.table-indice {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: white; /* Fondo blanco para contraste */
+    color: #333; /* Texto oscuro para legibilidad */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Encabezados de la tabla */
+.table-indice thead {
+    background-color: #ff6f61; /* Naranja llamativo */
+    color: white;
+}
+
+.table-indice th,
+.table-indice td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Efecto hover en las filas */
+.table-indice tbody tr:hover {
+    background-color: #ffe6e1;
+}
+
+/* Estilo para los enlaces */
+.table-indice a {
+    text-decoration: none;
+    color: #ff6f61;
+    font-weight: bold;
+}
+
+.table-indice a:hover {
+    color: #ff3d20;
+}
+/* Fondo elegante con degradado */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, gray,gray); /* Degradado azul */
+    color: white;
+    min-height: 100vh;
+}
+
+/* Estilo del header */
+.masthead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+    border-radius: 15px;
+    margin: 50px auto;
+    max-width: 800px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Texto principal */
+.masthead-subheading {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.masthead-heading {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* Imagen del logo */
+.logo {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Botón personalizado */
+.btn-custom {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #e6c2bd; /* Naranja vibrante */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #e6c2bd; /* Más oscuro en hover */
+    transform: scale(1.05); /* Ligera ampliación */
+}
+
+.btn-custom:active {
+    transform: scale(1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
