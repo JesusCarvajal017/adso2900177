@@ -22,7 +22,7 @@
       <!-- Sidebar scroll-->
       <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
-          <a href="index.php" class="text-nowrap logo-img">
+          <a href="" class="text-nowrap logo-img">
             <img src="../assets/images/logo-sena.png" width="70" alt="" />
           </a>
           <h3>Proyectos</h3>

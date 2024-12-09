@@ -1,3 +1,16 @@
+<?php
+  require('model/db/cnxion.php');
+
+  $cxion = new Conexion();
+
+  session_start();
+  // session_destroy();
+
+  if(!isset($_SESSION['user_id'])){
+    header('Location: Views/authentication-login.php');
+  }
+    
+?>
 <!doctype html>
 <html lang="en">
 
@@ -24,7 +37,7 @@
       <!-- Sidebar scroll-->
       <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
-          <a href="index.php" class="text-nowrap logo-img">
+          <a href="" class="text-nowrap logo-img">
             <img src="assets/images/logo-sena.png" width="70" alt="" />
           </a>
           <h3>Proyectos</h3>
@@ -207,7 +220,7 @@
                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
                   <div class="message-body">
                     <!-- Botón Cerrar Sesión -->
-                    <a href="Views/authentication-login.php" class="btn btn-outline-primary mx-5 mt-2 d-flex justify-content-center align-items-center gap-2">
+                    <a href="Model/login/cerrarSession.php" class="btn btn-outline-primary mx-5 mt-2 d-flex justify-content-center align-items-center gap-2">
                       <div>Salir</div>
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-logout">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -257,7 +270,7 @@
           <div class="card m-auto">
             <div class="card-body p-0">
               <div class="contendor-proyectos p-2">
-                <h2 class="title-proyectos">Proyectos Participantes</h2>
+                <h2 class="title-proyectos">Proyectos</h2>
                 <div class="carruel-proyectos">
                   <div class="swiper mySwiper container">
                     <div class="swiper-wrapper content">
