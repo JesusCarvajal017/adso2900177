@@ -265,7 +265,7 @@
                 <div class="col-md-7">
                   <!-- Foto Intengrantes -->
                   <div class="contenedor-foto-integrantes">
-                    <img src="" alt="foto-integrantes">
+                    <img src="../../assets/images/ADSO/Grupo_Isabella.jpg" alt="foto-integrantes">
                   </div>
                 </div>
               </div>
