@@ -1,0 +1,61 @@
+[
+    {
+        "nombre": "María Isabel Tovar Pastrana",
+        "rol": "Líder de Equipo",
+        "imagen": "img_Integrantes/yo.jpeg",
+        "descripcion": "Como líder de equipo, superviso cada aspecto del desarrollo, asegurando que el trabajo cumpla con los estándares de calidad. Contribuyo activamente en todos los sectores, desde la interfaz de usuario y la lógica de juego hasta la experiencia del usuario y la optimización general del proyecto.",
+        "contribuciones": [
+            "Supervisión y verificación de calidad en todos los aspectos del proyecto",
+            "Apoyo en el diseño de interfaz y experiencia del usuario",
+            "Desarrollo del videojuego de aventura espacial",
+            "Aporte en el Modelo Entidad-Relación (MER)",
+            "Designación de tareas y gestión del flujo de trabajo"
+        ],
+        "contacto": {
+            "correo": "isabeltovarp.18@gmail.com",
+            "github": "IsabelTovar08"
+        }
+    },
+    {
+        "nombre": "Andrés Mauricio Noscué Cerquera",
+        "rol": "Desarrollador Backend",
+        "imagen": "img_Integrantes/mauro.png",
+        "descripcion": "Andrés es responsable de la funcionalidad central de Memory Star, asegurando que la comunicación entre el frontend y el servidor sea eficiente y segura. Con habilidades en desarrollo backend y bases de datos, su trabajo se enfoca en garantizar un flujo de datos fluido y una integración robusta entre la interfaz de usuario y el sistema. Es el encargado de optimizar las operaciones en el servidor, así como de la verificación y el correcto funcionamiento de la lógica en el backend.",
+        "contribuciones": [
+            "Desarrollo de la API y conexión con el frontend",
+            "Implementación de la lógica del servidor y flujos de autenticación",
+            "Optimización de la base de datos y manejo de consultas"
+        ],
+        "contacto": {
+            "correo": "mauronoscue@gmail.com",
+            "github": "MauricioNoscue "
+        }
+    },
+    {
+        "nombre": "Sergio Andrés Leguízamo Vargas",
+        "rol": "Desarrollador Frontend",
+        "imagen": "img_Integrantes/sergio.png",
+        "descripcion": "Encargado en el desarrollo frontend con experiencia en la creación de interfaces de usuario enfocadas en mejorar la experiencia visual e interactiva de Memory Star. Mis competencias técnicas incluyen dominio de JavaScript y CSS, aplicadas al diseño y desarrollo de interfaces atractivas y funcionales. Estoy orientado a crear experiencias de usuario optimizadas y a enriquecer la jugabilidad mediante diseños intuitivos y visualmente impactantes.",
+        "contribuciones": [
+            "Diseño de interfaces de usuario: Responsable de la creación de tablas de puntuación y manuales de juego, aportando un diseño coherente y una navegación intuitiva.",
+            "Desarrollo de juegos de secuencia: Diseño y programación de mecánicas para ordenar objetos según temáticas específicas, optimizando la jugabilidad y la inmersión del usuario."
+        ],
+        "contacto": {
+            "correo": "vargasleguizamo95@gmail.com",
+            "github": "Leguizamo2502"
+        }
+    },
+    {
+        "nombre": "Yerson Stiven Cuellar Rubiano",
+        "rol": "Desarrollador Frontend",
+        "descripcion": "El frontend, desarrollado por Yerson Stiven Cuéllar Rubiano, representa una solución tecnológica orientada a brindar una experiencia de usuario intuitiva, accesible y visualmente atractiva. Diseñado bajo principios modernos de usabilidad y optimización, este frontend se adapta a las necesidades de diversos usuarios, integrando características que aseguran un desempeño fluido y una navegación eficiente.",
+        "contribuciones": [
+            "Implementación de animaciones suaves y transiciones dinámicas que enriquecen la experiencia del usuario.",
+            "Integración de efectos visuales y animaciones."
+        ],
+        "contacto": {
+            "correo": " yersonstivencuellarrubiano@gmail.com",
+            "github": "yersonct"
+        }
+    }
+]

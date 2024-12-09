@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>PAT GAME</title>
+
+   <link rel="stylesheet" type="text/css" href="css/styles.css">
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link rel="stylesheet" href="css/responsive.css">
+
+
+   <link rel="icon" href="assets/Logos/Logo Principal.ico" type="image/gif" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Mono:wght@100..700&display=swap"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+   <!-- Mios -->
+   <link rel="stylesheet" href="css/stylesNew.css">
+
+
+
+</head>
+
+<body>
+   <div class="btn-conteiner">
+      <a class="btn-content" href="https://drive.google.com/drive/folders/1hn7jmSX_sw1psNKQA4wy5N150oxxutNP?usp=sharing" target="_blank">
+         <span class="btn-title-inicio">All</span>
+         <span class="icon-arrow">
+            <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+               <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <path id="arrow-icon-one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                  <path id="arrow-icon-two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                  <path id="arrow-icon-three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+               </g>
+            </svg>
+         </span> 
+      </a>
+   </div>
+
+   <!-- header section start -->
+   <div class="header_section">
+      <div class="header_main">
+         <div class="mobile_menu">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               <div class="logo_mobile"><a href="#"><img src="assets/Fondos/TituloDos.png"></a></div>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#informacion">Información</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Documentos</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link " href="#diagramas">Diagramas</a>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+         <div class="container-fluid">
+            <div class="logo"><a href="#"><img class="imagen-titulo" src="assets/Fondos/TituloTres.png"></a></div>
+            <div class="menu_main">
+               <ul>
+                  <li><a href="#">Inicio</a></li>
+                  <li><a href="#informacion">Información</a></li>
+                  <li><a href="#portfolio">Documentos</a></li>
+                  <li><a href="#diagramas">Diagramas</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!-- banner section start -->
+      <div class="banner_section layout_padding">
+         <div class="container">
+            <h1 class="banner_taital">Bienvenidos</h1>
+            <h2 class="banner_text">Piensa, Agilizate y Triunfa</h2>
+            <div class="read_bt invisible"><a href="#"></a></div>
+         </div>
+      </div>
+      <!-- banner section end -->
+   </div>
+   <!-- header sectiont s end -->
+
+   <!-- Seccion Indice -->
+   <div class="services_section layout_padding">
+      <div class="container">
+         <h1 class="services_taital">Secciones</h1>
+
+         <p class="services_text">
+            PAT GAME es un proyecto de software centrado en el desarrollo de un juego de agilidad
+            mental que pone a prueba la memoria y la rapidez de los jugadores. Toda la documentación
+            del proyecto, que incluye los requisitos del sistema, el diseño, la implementación y
+            otros aspectos clave, está disponible en los documentos cargados en este sitio web.
+            <br>
+            <br>
+            Estos documentos ofrecen una visión detallada del proceso de desarrollo, las tecnologías
+            empleadas y los objetivos del juego. Todo el contenido está organizado para facilitar la
+            comprensión y revisión del avance del proyecto
+         </p>
+
+         <div class="services_section_2 ">
+            <div class="row contenedor-cartas-secciones ">
+               <!-- Carta Documentos -->
+               <div class="col-md-5 px-2 con-carta ">
+                  <div class="flip-card carta-secciones ">
+                     <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                           <p class="title-carta">DOCUMENTOS</p>
+                           <p class="texto-frente">Voltea</p>
+                        </div>
+                        <div class="flip-card-back">
+                           <p class="title-atras">¡Hola!</p>
+                           <p class="texto-atras">
+                              Accede a la documentación completa del proyecto, que incluye
+                              requisitos, diseño e implementación de PAT GAME.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="btn_main"><a href="#portfolio">Ver</a></div>
+               </div>
+
+               <!-- Carta Visual -->
+               <div class="col-md-5 px-2 con-carta ">
+                  <div class="flip-card carta-secciones ">
+                     <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                           <p class="title-carta">DIAGRAMAS</p>
+                           <p class="texto-frente">Voltea</p>
+                        </div>
+                        <div class="flip-card-back">
+                           <p class="title-atras">¡Hola!</p>
+                           <p class="texto-atras">
+                              Explora los diagramas del proyecto, como mockups, casos de uso
+                              y secuenciales, para entender el flujo y diseño de PAT GAME.</p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="btn_main "><a href="#diagramas">Ver</a></div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Fin Seccion Indice -->
+
+   <!--Seccion Nosotros -->
+   <div class="about_section layout_padding" id="informacion">
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-md-6 contenedor-nosotros-main">
+               <div class="contenedor-nosotros">
+                  <h1 class="about_taital">Nosotros</h1>
+                  <p class="about_text">
+                     Somos un grupo de apasionados desarrolladores detrás de PAT GAME,
+                     un juego de agilidad mental pensado para hacerte competir y divertirte
+                     sin depender de internet. Nuestro objetivo es retar tu memoria y rapidez
+                     mental mientras disfrutas con amigos o rivales. Creemos que los mejores
+                     momentos surgen de la interacción directa y el trabajo en equipo,
+                     y eso es justo lo que buscamos con cada partida de PAT GAME:
+                     desafiarte y conectar con los demás de una manera divertida y única.
+                  </p>
+               </div>
+            </div>
+            <div class="col-md-6 padding_right_0 ">
+               <div class="client_section_2 ">
+                  <div id="carouselExampleIndicators" class="carousel slide carrusel" data-ride="carousel">
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <div class="client_main">
+                              <div class="box_right mb-2">
+                                 <div class="client_taital_left">
+                                    <div class="client_img"><img src="images/DatoCurioso.png"></div>
+                                 </div>
+                              </div>
+                              <div class="box_left">
+                                 <div class="lorem_text">
+                                    <h1>Dato Curioso #1</h1>
+                                    <p class="m-0 text-dato-curioso">
+                                       Juegos diseñados para el entrenamiento mental, como los de agilidad y memoria,
+                                       son eficaces para mejorar funciones cognitivas clave, como la memoria a corto
+                                       plazo, y ayudan a retener mejor la información reciente.
+                                    </p>
+                                 </div>
+                              </div>
+
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="client_main">
+                              <div class="box_right mb-2">
+                                 <div class="client_taital_left">
+                                    <div class="client_img"><img src="images/DatoCuriosoDos.png"></div>
+                                 </div>
+                              </div>
+                              <div class="box_left ">
+                                 <div class="lorem_text">
+                                    <h1>Dato Curioso #2</h1>
+                                    <p class="m-0 text-dato-curioso">
+                                       Los videojuegos que requieren navegar por entornos complejos,
+                                       como los de aventura o rompecabezas, pueden mejorar la memoria espacial,
+                                       ayudando a los jugadores a recordar ubicaciones y orientarse mejor en su entorno
+                                       real.
+                                    </p>
+                                 </div>
+                              </div>
+
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="client_main ">
+                              <div class="box_right mb-2">
+                                 <div class="client_taital_left">
+                                    <div class="client_img-dos"><img src="images/DatoCuriosoTres.png"></div>
+                                 </div>
+                              </div>
+                              <div class="box_left">
+                                 <div class="lorem_text">
+                                    <h1>Dato Curioso #3</h1>
+                                    <p class="m-0 text-dato-curioso">
+                                       En adultos mayores, jugar videojuegos de agilidad mental
+                                       ha demostrado ralentizar el deterioro cognitivo asociado
+                                       con la edad. Juegos que desafían la memoria pueden mantener
+                                       el cerebro activo y reducir los efectos del envejecimiento.
+                                    </p>
+                                 </div>
+                              </div>
+
+                           </div>
+                        </div>
+                     </div>
+                     <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                     </ol>
+
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Fin Seccion Nosotros -->
+
+   <!-- Seccion Documentos-->
+   <div class="about_section layout_padding section-documents" id="portfolio">
+      <div class="container">
+         <div class="">
+            <h1 class="services_taital mb-5">Documentación</h1>
+         </div>
+
+         <!-- DOCUMENTOS PDF -->
+
+         <div class="row justify-content-evenly">
+            <h1 class="text-center mb-4 title-documentos-pdf">PDF</h1>
+            <!-- PDF-1 -->
+            <div class="col-lg-4 col-sm-6 mb-4">
+               <div class="portfolio-item">
+                  <a class="portfolio-link" id="btnAbrirModalPDF01">
+                     <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><img class="icono-ver"
+                              src="assets/img/portfolio/Icono Ver.png" alt=""></i></div>
+                     </div>
+                     <div class="contenedor-documento-pdf d-flex justify-content-center align-items-center">
+                        <img class="img-fluid img-documento" src="assets/img/portfolio/Icono PDF.png" alt="">
+                     </div>
+                  </a>
+                  <div class="portfolio-caption">
+                     <div class="portfolio-caption-heading">1.Resumen Ejecutivo</div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- PDF-2 -->
+            <div class="col-lg-4 col-sm-6 mb-4">
+               <div class="portfolio-item">
+                  <a class="portfolio-link" id="btnAbrirModalPDF02">
+                     <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><img class="icono-ver"
+                              src="assets/img/portfolio/Icono Ver.png" alt=""></i></div>
+                     </div>
+                     <div class="contenedor-documento-pdf d-flex justify-content-center align-items-center">
+                        <img class="img-fluid img-documento" src="assets/img/portfolio/Icono PDF.png" alt="">
+                     </div>
+                  </a>
+                  <div class="portfolio-caption">
+                     <div class="portfolio-caption-heading">2.Introduccón</div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- PDF-3 -->
+            <div class="col-lg-4 col-sm-6 mb-4">
+               <div class="portfolio-item">
+                  <a class="portfolio-link" id="btnAbrirModalPDF03">
+                     <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><img class="icono-ver"
+                              src="assets/img/portfolio/Icono Ver.png" alt=""></i></div>
+                     </div>
+                     <div class="contenedor-documento-pdf d-flex justify-content-center align-items-center">
+                        <img class="img-fluid img-documento" src="assets/img/portfolio/Icono PDF.png" alt="">
+                     </div>
+                  </a>
+                  <div class="portfolio-caption">
+                     <div class="portfolio-caption-heading">3.Descripción Proy.</div>
+                  </div>
+               </div>
+            </div>
+            
+            <!-- PDF-4 -->
+            <div class="col-lg-4 col-sm-6 mb-4">
+               <div class="portfolio-item">
+                  <a class="portfolio-link" id="btnAbrirModalPDF04">
+                     <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><img class="icono-ver"
+                              src="assets/img/portfolio/Icono Ver.png" alt=""></i></div>
+                     </div>
+                     <div class="contenedor-documento-pdf d-flex justify-content-center align-items-center">
+                        <img class="img-fluid img-documento" src="assets/img/portfolio/Icono PDF.png" alt="">
+                     </div>
+                  </a>
+                  <div class="portfolio-caption">
+                     <div class="portfolio-caption-heading">4.Solucion Propuesta</div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- PDF-5 -->
+            <div class="col-lg-4 col-sm-6 mb-4">
+               <div class="portfolio-item">
+                  <a class="portfolio-link" id="btnAbrirModalPDF05">
+                     <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><img class="icono-ver"
+                              src="assets/img/portfolio/Icono Ver.png" alt=""></i></div>
+                     </div>
+                     <div class="contenedor-documento-pdf d-flex justify-content-center align-items-center">
+                        <img class="img-fluid img-documento" src="assets/img/portfolio/Icono PDF.png" alt="">
+                     </div>
+                  </a>
+                  <div class="portfolio-caption">
+                     <div class="portfolio-caption-heading">5.Plan de Trabajo</div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- PDF-6 -->
+            <div class="col-lg-4 col-sm-6 mb-4">
+               <div class="portfolio-item">
+                  <a class="portfolio-link" id="btnAbrirModalPDF06">
+                     <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><img class="icono-ver"
+                              src="assets/img/portfolio/Icono Ver.png" alt=""></i></div>
+                     </div>
+                     <div class="contenedor-documento-pdf d-flex justify-content-center align-items-center">
+                        <img class="img-fluid img-documento" src="assets/img/portfolio/Icono PDF.png" alt="">
+                     </div>
+                  </a>
+                  <div class="portfolio-caption">
+                     <div class="portfolio-caption-heading">6.Equipo de Trabajo</div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- PDF-7 -->
+            <div class="col-lg-4 col-sm-6 mb-4">
+               <div class="portfolio-item">
+                  <a class="portfolio-link" id="btnAbrirModalPDF07">
+                     <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><img class="icono-ver"
+                              src="assets/img/portfolio/Icono Ver.png" alt=""></i></div>
+                     </div>
+                     <div class="contenedor-documento-pdf d-flex justify-content-center align-items-center">
+                        <img class="img-fluid img-documento" src="assets/img/portfolio/Icono PDF.png" alt="">
+                     </div>
+                  </a>
+                  <div class="portfolio-caption">
+                     <div class="portfolio-caption-heading">7.Presupuesto</div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- PDF-8 -->
+            <div class="col-lg-4 col-sm-6 mb-4">
+               <div class="portfolio-item">
+                  <a class="portfolio-link" id="btnAbrirModalPDF08">
+                     <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><img class="icono-ver"
+                              src="assets/img/portfolio/Icono Ver.png" alt=""></i></div>
+                     </div>
+                     <div class="contenedor-documento-pdf d-flex justify-content-center align-items-center">
+                        <img class="img-fluid img-documento" src="assets/img/portfolio/Icono PDF.png" alt="">
+                     </div>
+                  </a>
+                  <div class="portfolio-caption">
+                     <div class="portfolio-caption-heading title-pdf-small">8.Mantenimiento-Soporte</div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- PDF-9 -->
+            <div class="col-lg-4 col-sm-6 mb-4">
+               <div class="portfolio-item">
+                  <a class="portfolio-link" id="btnAbrirModalPDF09">
+                     <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><img class="icono-ver"
+                              src="assets/img/portfolio/Icono Ver.png" alt=""></i></div>
+                     </div>
+                     <div class="contenedor-documento-pdf d-flex justify-content-center align-items-center">
+                        <img class="img-fluid img-documento" src="assets/img/portfolio/Icono PDF.png" alt="">
+                     </div>
+                  </a>
+                  <div class="portfolio-caption">
+                     <div class="portfolio-caption-heading">9.Cronograma Pagos</div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- PDF-10 - Anexo Identificacion de requerimientos funcionales -->
+            <div class="col-lg-4 col-sm-6 mb-4">
+               <h1 class="text-center title-anexos">Anexo - Requisitos</h1>
+               <div class="portfolio-item">
+                  <a class="portfolio-link" id="btnAbrirModalPDF10">
+                     <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><img class="icono-ver"
+                              src="assets/img/portfolio/Icono Ver.png" alt=""></i></div>
+                     </div>
+                     <div class="contenedor-documento-pdf d-flex justify-content-center align-items-center">
+                        <img class="img-fluid img-documento" src="assets/img/portfolio/Icono PDF.png" alt="">
+                     </div>
+                  </a>
+                  <div class="portfolio-caption">
+                     <div class="portfolio-caption-heading">Funcional y No Funcional</div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- PDF-11 - MER -->
+            <div class="col-lg-4 col-sm-6 mb-4">
+               <h1 class="text-center title-anexos">Anexo - MER</h1>
+               <div class="portfolio-item">
+                  <a class="portfolio-link" id="btnAbrirModalPDF11">
+                     <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><img class="icono-ver"
+                              src="assets/img/portfolio/Icono Ver.png" alt=""></i></div>
+                     </div>
+                     <div class="contenedor-documento-pdf d-flex justify-content-center align-items-center">
+                        <img class="img-fluid img-documento" src="assets/img/portfolio/Icono PDF.png" alt="">
+                     </div>
+                  </a>
+                  <div class="portfolio-caption">
+                     <div class="portfolio-caption-heading">MER</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- DOCUMENTOS WORD -->
+
+         <div class="row justify-content-evenly">
+            <h1 class="text-center mb-4 title-documentos-word">WORD</h1>
+            <div class="col-lg-4 col-sm-6 mb-4">
+               <!-- WORD-1 -->
+               <div class="portfolio-item">
+                  <a class="portfolio-link" href="Documentos/WORD/FormatoAnteproyecto.docx" download>
+                     <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><img class="icono-descargar"
+                              src="assets/img/portfolio/Icono Descargar.png" alt=""></i></div>
+                     </div>
+                     <div class="contenedor-documento-word d-flex justify-content-center align-items-center">
+                        <img class="img-fluid img-documento" src="assets/img/portfolio/Icono Word.png" alt="">
+                     </div>
+                  </a>
+                  <div class="portfolio-caption">
+                     <div class="portfolio-caption-heading">Formato Anteproyecto</div>
+                  </div>
+               </div>
+
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4">
+               <!-- WORD-2 -->
+               <div class="portfolio-item">
+                  <a class="portfolio-link" href="Documentos/WORD/SRC.docx" download>
+                     <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><img class="icono-descargar"
+                              src="assets/img/portfolio/Icono Descargar.png" alt=""></i></div>
+                     </div>
+                     <div class="contenedor-documento-word d-flex justify-content-center align-items-center">
+                        <img class="img-fluid img-documento" src="assets/img/portfolio/Icono Word.png" alt="">
+                     </div>
+                  </a>
+                  <div class="portfolio-caption">
+                     <div class="portfolio-caption-heading">SRC</div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+
+         <!-- DOCUMENTOS EXCEL -->
+
+         <div class="row justify-content-evenly">
+            <h1 class="text-center mb-4 title-documentos-excel">EXCEL</h1>
+            <!-- EXCEL-1 -->
+            <div class="col-lg-4 col-sm-6 mb-4">
+               <div class="portfolio-item">
+                  <a class="portfolio-link" href="Documentos/EXCEL/Ficha tecnica de requerimientos.xlsx" download>
+                     <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><img class="icono-descargar"
+                              src="assets/img/portfolio/Icono Descargar.png" alt=""></i></div>
+                     </div>
+                     <div class="contenedor-documento-excel d-flex justify-content-center align-items-center">
+                        <img class="img-fluid img-documento" src="assets/img/portfolio/Icono EXCEL.png" alt="">
+                     </div>
+                  </a>
+                  <div class="portfolio-caption">
+                     <div class="portfolio-caption-heading">Ficha Ténica</div>
+                  </div>
+               </div>
+            </div>
+            <!-- EXCEL-2 -->
+            <div class="col-lg-4 col-sm-6 mb-4">
+               <div class="portfolio-item">
+                  <a class="portfolio-link" href="Documentos/EXCEL/Check List.xlsm" download>
+                     <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><img class="icono-descargar"
+                              src="assets/img/portfolio/Icono Descargar.png" alt=""></i></div>
+                     </div>
+                     <div class="contenedor-documento-excel d-flex justify-content-center align-items-center">
+                        <img class="img-fluid img-documento" src="assets/img/portfolio/Icono EXCEL.png" alt="">
+                     </div>
+                  </a>
+                  <div class="portfolio-caption">
+                     <div class="portfolio-caption-heading">Check List</div>
+                  </div>
+               </div>
+            </div>
+            <!-- EXCEL-3 -->
+            <div class="col-lg-4 col-sm-6 mb-4">
+               <div class="portfolio-item">
+                  <a class="portfolio-link" href="Documentos/EXCEL/Mitigacion de Riesgos.xlsx" download>
+                     <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><img class="icono-descargar"
+                              src="assets/img/portfolio/Icono Descargar.png" alt=""></i></div>
+                     </div>
+                     <div class="contenedor-documento-excel d-flex justify-content-center align-items-center">
+                        <img class="img-fluid img-documento" src="assets/img/portfolio/Icono EXCEL.png" alt="">
+                     </div>
+                  </a>
+                  <div class="portfolio-caption">
+                     <div class="portfolio-caption-heading">Mitigación de Riesgos</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+      </div>
+   </div>
+   <!-- Fin Seccion Documentos-->
+
+
+   <!-- Modals Seccion Documentos-->
+
+   <!-- MODAL PDF -->
+
+   <!-- Documento01 -->
+   <div id="modalPDF01" class="modal">
+      <div class="modal-content">
+         <!-- Botón de cierre -->
+         <button id="btnCerrarModaPDF01" class="btn-cerrar">X</button>
+         <!-- PDF embebido -->
+         <iframe id="pdfViewer" src="Documentos/PDF/1-Resumen Ejecutivo.pdf" frameborder="0"></iframe>
+         <!-- Botón de descarga -->
+         <a href="Documentos/PDF/1-Resumen Ejecutivo.pdf" download class="btn-descargar">DESCARGAR</a>
+      </div>
+   </div>
+
+   <!-- Documento02 -->
+   <div id="modalPDF02" class="modal">
+      <div class="modal-content">
+         <!-- Botón de cierre -->
+         <button id="btnCerrarModaPDF02" class="btn-cerrar">X</button>
+         <!-- PDF embebido -->
+         <iframe id="pdfViewer" src="Documentos/PDF/2-Introducción.pdf" frameborder="0"></iframe>
+         <!-- Botón de descarga -->
+         <a href="Documentos/PDF/2-Introducción.pdf" download class="btn-descargar">DESCARGAR</a>
+      </div>
+   </div>
+
+   <!-- Documento03 -->
+   <div id="modalPDF03" class="modal">
+      <div class="modal-content">
+         <!-- Botón de cierre -->
+         <button id="btnCerrarModaPDF03" class="btn-cerrar">X</button>
+         <!-- PDF embebido -->
+         <iframe id="pdfViewer" src="Documentos/PDF/3-Descripción del Proyecto.pdf" frameborder="0"></iframe>
+         <!-- Botón de descarga -->
+         <a href="Documentos/PDF/3-Descripción del Proyecto.pdf" download class="btn-descargar">DESCARGAR</a>
+      </div>
+   </div>
+
+   <!-- Documento04 -->
+   <div id="modalPDF04" class="modal">
+      <div class="modal-content">
+         <!-- Botón de cierre -->
+         <button id="btnCerrarModaPDF04" class="btn-cerrar">X</button>
+         <!-- PDF embebido -->
+         <iframe id="pdfViewer" src="Documentos/PDF/4 Solución propuesta.pdf" frameborder="0"></iframe>
+         <!-- Botón de descarga -->
+         <a href="Documentos/PDF/4 Solución propuesta.pdf" download class="btn-descargar">DESCARGAR</a>
+      </div>
+   </div>
+
+   <!-- Documento05 -->
+   <div id="modalPDF05" class="modal">
+      <div class="modal-content">
+         <!-- Botón de cierre -->
+         <button id="btnCerrarModaPDF05" class="btn-cerrar">X</button>
+         <!-- PDF embebido -->
+         <iframe id="pdfViewer" src="Documentos/PDF/5 Plan de trabajo.pdf" frameborder="0"></iframe>
+         <!-- Botón de descarga -->
+         <a href="Documentos/PDF/5 Plan de trabajo.pdf" download class="btn-descargar">DESCARGAR</a>
+      </div>
+   </div>
+
+   <!-- Documento06 -->
+   <div id="modalPDF06" class="modal">
+      <div class="modal-content">
+         <!-- Botón de cierre -->
+         <button id="btnCerrarModaPDF06" class="btn-cerrar">X</button>
+         <!-- PDF embebido -->
+         <iframe id="pdfViewer" src="Documentos/PDF/6 Equipo de trabajo.pdf" frameborder="0"></iframe>
+         <!-- Botón de descarga -->
+         <a href="Documentos/PDF/6 Equipo de trabajo.pdf" download class="btn-descargar">DESCARGAR</a>
+      </div>
+   </div>
+
+   <!-- Documento07 -->
+   <div id="modalPDF07" class="modal">
+      <div class="modal-content">
+         <!-- Botón de cierre -->
+         <button id="btnCerrarModaPDF07" class="btn-cerrar">X</button>
+         <!-- PDF embebido -->
+         <iframe id="pdfViewer" src="Documentos/PDF/7 Presupuesto.pdf" frameborder="0"></iframe>
+         <!-- Botón de descarga -->
+         <a href="Documentos/PDF/7 Presupuesto.pdf" download class="btn-descargar">DESCARGAR</a>
+      </div>
+   </div>
+
+   <!-- Documento08 -->
+   <div id="modalPDF08" class="modal">
+      <div class="modal-content">
+         <!-- Botón de cierre -->
+         <button id="btnCerrarModaPDF08" class="btn-cerrar">X</button>
+         <!-- PDF embebido -->
+         <iframe id="pdfViewer" src="Documentos/PDF/8 Plan de mantenimiento y soporte.pdf" frameborder="0"></iframe>
+         <!-- Botón de descarga -->
+         <a href="Documentos/PDF/8 Plan de mantenimiento y soporte.pdf" download class="btn-descargar">DESCARGAR</a>
+      </div>
+   </div>
+
+   <!-- Documento09 -->
+   <div id="modalPDF09" class="modal">
+      <div class="modal-content">
+         <!-- Botón de cierre -->
+         <button id="btnCerrarModaPDF09" class="btn-cerrar">X</button>
+         <!-- PDF embebido -->
+         <iframe id="pdfViewer" src="Documentos/PDF/9 Cronograma de pagos.pdf" frameborder="0"></iframe>
+         <!-- Botón de descarga -->
+         <a href="Documentos/PDF/9 Cronograma de pagos.pdf" download class="btn-descargar">DESCARGAR</a>
+      </div>
+   </div>
+
+   <!-- Documento10 Anexo -->
+   <div id="modalPDF10" class="modal">
+      <div class="modal-content">
+         <!-- Botón de cierre -->
+         <button id="btnCerrarModaPDF10" class="btn-cerrar">X</button>
+         <!-- PDF embebido -->
+         <iframe id="pdfViewer" src="Documentos/PDF/Anexos/Identificacion De Requerimientos.pdf" frameborder="0"></iframe>
+         <!-- Botón de descarga -->
+         <a href="Documentos/PDF/Anexos/Identificacion De Requerimientos.pdf" download class="btn-descargar">DESCARGAR</a>
+      </div>
+   </div>
+
+   <!-- Documento11 Anexo -->
+   <div id="modalPDF11" class="modal">
+      <div class="modal-content">
+         <!-- Botón de cierre -->
+         <button id="btnCerrarModaPDF11" class="btn-cerrar">X</button>
+         <!-- PDF embebido -->
+         <iframe id="pdfViewer" src="Documentos/PDF/Anexos/MER PAT.pdf" frameborder="0"></iframe>
+         <!-- Botón de descarga -->
+         <a href="Documentos/PDF/Anexos/MER PAT.pdf" download class="btn-descargar">DESCARGAR</a>
+      </div>
+   </div>
+
+
+   <!-- Fin Modals Seccion Documentos-->
+
+   <!-- Seccion Diagramas -->
+   <div class="services_section layout_padding" id="diagramas">
+      <div class="container">
+         <h1 class="services_taital mb-3">Diagramas</h1>
+
+         <div class="services_section_2 ">
+            <div class="row contenedor-cartas-secciones ">
+               <!-- Carta Diagramas Secuenciales -->
+               <div class="col-md-4 px-2 con-carta ">
+                  <div class="book-secuencia">
+                     <a>
+                        <button class="boton-diagramas" id="btnAbrirModalFlujo">
+                           <span>Abrir</span>
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 74 74" height="34"
+                              width="34">
+                              <circle stroke-width="3" stroke="black" r="35.5" cy="37" cx="37"></circle>
+                              <path fill="black"
+                                 d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z">
+                              </path>
+                           </svg>
+                        </button>
+                     </a>
+                     <div class="cover-secuencia">
+                        <p>Flujo</p>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Carta Mockup -->
+               <div class="col-md-4 px-2 con-carta ">
+                  <div class="book-mockup">
+                     <a href="https://www.figma.com/design/fKVBL5ilP072R4Qnfaexe8/PAT-GAME?node-id=2046-621&t=UxpROg9OlG7cT9Y5-1" target="_blank" rel="noopener noreferrer">
+                        <button class="boton-diagramas">
+                           <span>IR</span>
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 74 74" height="34"
+                              width="34">
+                              <circle stroke-width="3" stroke="black" r="35.5" cy="37" cx="37"></circle>
+                              <path fill="black"
+                                 d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z">
+                              </path>
+                           </svg>
+                        </button>
+                     </a>
+                     <div class="cover-mockup">
+                        <p>Mockup</p>
+                     </div>
+                  </div>
+
+               </div>
+
+               <!-- Carta Diagramas Casos de Uso -->
+               <div class="col-md-4 px-2 con-carta ">
+                  <div class="book-caso-uso">
+                     <a>
+                        <button class="boton-diagramas" id="btnAbrirModalCU">
+                           <span>Abrir</span>
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 74 74" height="34"
+                              width="34">
+                              <circle stroke-width="3" stroke="black" r="35.5" cy="37" cx="37"></circle>
+                              <path fill="black"
+                                 d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z">
+                              </path>
+                           </svg>
+                        </button>
+                     </a>
+                     <div class="cover-caso-uso">
+                        <p>Casos de Uso</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Fin Seccion Diagramas -->
+
+   <!-- Modals Seccion Diagramas-->
+
+   <!-- MODAL DIGRAMA FLUJO -->
+   <div id="modalDiagramaFlujo" class="modal">
+      <div class="modal-content modal-content-Flujo">
+         <!-- Botón de cierre -->
+         <button id="btnCerrarModaFlujo" class="btn-cerrar">X</button>
+         <!-- PDF embebido -->
+         <iframe id="pdfViewer" src="Documentos/Diagramas/DIAGRAMAS Flujo.pdf" frameborder="0"></iframe>
+         <!-- Botón de descarga -->
+         <div class="w-100 d-flex justify-content-evenly align-items-center"> 
+            <a href="Documentos/Diagramas/DIAGRAMAS Flujo.pdf" download class="btn-descargar">DESCARGAR</a>
+            <a href="https://miro.com/welcomeonboard/emRJS2phZkVXdmxpS2tSUHQ3cnNHN2taWWJ3R045b013S04zOERzS0xtampNd25hbFJJOTdVNzNEbXcwTE5ScnwzNDU4NzY0NTkwOTUwNTg1OTI2fDI=?share_link_id=306021453919" target="_blank" rel="noopener noreferrer" class="btn-ver-web">Ver En Web</a>
+         </div>
+         
+      </div>
+   </div>
+
+   <!-- MODAL DIGRAMA CASO DE USO -->
+   <div id="modalDiagramaCU" class="modal">
+      <div class="modal-content modal-content-CU">
+         <!-- Botón de cierre -->
+         <button id="btnCerrarModalCU" class="btn-cerrar">X</button>
+         <!-- PDF embebido -->
+         <iframe id="pdfViewer" src="Documentos/Diagramas/DIAGRAMAS Caso Uso.pdf" frameborder="0"></iframe>
+         <!-- Botón de descarga -->
+         <a href="Documentos/Diagramas/DIAGRAMAS Caso Uso.pdf" download class="btn-descargar">DESCARGAR</a>
+      </div>
+   </div>
+
+   <!-- Javascript files-->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/scripts.js"></script>
+   <!-- Bootstrap core JS-->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+   <!-- Core theme JS-->
+   <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+   <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+   <script src="js/funcionesNew.js"></script>
+</body>
+
+</html>

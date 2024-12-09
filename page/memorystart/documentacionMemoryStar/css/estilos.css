@@ -1,0 +1,22 @@
+.oculto {
+    display: none;
+}
+#contenedorIframes, #contenedorIframesDos{
+    display: flex;
+    justify-content: center;
+    h1{
+        text-align: center;
+    }
+}
+iframe{
+    width: 100vh;
+}
+nav{
+    background-color: #bbd1ff;
+}
+.logoNavbar{
+    margin-right: 5%;
+}
+.card{
+    padding: 5% !important;
+}
