@@ -149,6 +149,14 @@
             <span class="hide-menu">Matriz de Riesgos</span>
             </a>
         </li>
+        <li class="sidebar-item">
+            <a class="sidebar-link" href="../cuestionario.php" aria-expanded="false">
+            <span>
+                <i class="ti ti-table"></i>
+            </span>
+            <span class="hide-menu">Cuestionario</span>
+            </a>
+        </li>
         </ul>
     </nav>
     <!-- End Sidebar navigation -->
